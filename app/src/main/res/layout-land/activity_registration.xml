@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:onClick="onRegisterButtonClick"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="492dp"
+        android:layout_marginTop="36dp"
+        android:text="Registration"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUsernameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Username:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPasswordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="25dp"
+        android:text="Password:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsernameRegister" />
+
+    <EditText
+        android:id="@+id/etUsernameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsernameRegister" />
+
+    <EditText
+        android:id="@+id/etPasswordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordRegister" />
+
+    <TextView
+        android:id="@+id/tvConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="57dp"
+        android:text="Confirm Password:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordRegister" />
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConfirmPassword" />
+
+    <Button
+        android:id="@+id/btnRegister1"
+        android:layout_width="111dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="51dp"
+        android:onClick="onRegisterButtonClick"
+        android:text="Register"
+        app:layout_constraintStart_toEndOf="@+id/etPasswordRegister"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegister" />
+
+    <Button
+        android:id="@+id/btnLogin1"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="298dp"
+        android:layout_marginTop="62dp"
+        android:onClick="onLoginButtonClick"
+        android:text="Login"
+        app:layout_constraintStart_toEndOf="@+id/tvConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

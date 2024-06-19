@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_view_categories"
+        android:title="View all categories" />
+    <item
+        android:id="@+id/option_add_category"
+        android:title="Add category" />
+    <item
+        android:id="@+id/nav_view_events"
+        android:title="View all events" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout" />
+
+</menu>

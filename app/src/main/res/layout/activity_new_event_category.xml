@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".NewEventCategory"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-9dp">
+
+    <TextView
+        android:id="@+id/tvNewCategoryForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:text="New Category Form"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCategoryId"
+        android:layout_width="264dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Auto-generated on save"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryId" />
+
+    <TextView
+        android:id="@+id/tvCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="48dp"
+        android:text="Category Name"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCategoryId" />
+
+    <EditText
+        android:id="@+id/etCategoryName"
+        android:layout_width="256dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Enter Category Name"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryName" />
+
+    <TextView
+        android:id="@+id/tvEventCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:text="Event Count"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCategoryName" />
+
+    <EditText
+        android:id="@+id/etEventCount"
+        android:layout_width="248dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Enter Event count"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEventCount" />
+
+    <TextView
+        android:id="@+id/tvCategoryId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="76dp"
+        android:text="Category Id"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/isActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:text="Is Active?"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEventCount" />
+
+    <Button
+        android:id="@+id/btnSaveCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="108dp"
+        android:onClick="onSaveCategoryClick"
+        android:text="Save Category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isActive" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="21dp"
+        android:text="Location"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isActive" />
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter category location"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
